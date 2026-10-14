@@ -33,24 +33,26 @@ A robust, multi-threaded Java application designed to perform complex linear alg
 ### Compilation & Testing
 Clone the repository and run the following Maven commands in the root directory:
 
-```bash
-# Compile source code
-mvn compile
+    # Compile source code
+    mvn compile
 
-# Run unit tests
-mvn test
+    # Run unit tests
+    mvn test
 
-# Package into an executable JAR file
-mvn package
-Running the Engine
+    # Package into an executable JAR file
+    mvn package
+
+### Running the Engine
 Execute the packaged JAR file by providing the number of threads, input JSON path, and output JSON path:
 
-Bash
-java -jar target/lga-1.0.jar 10 ./input_files/example1.json ./output_files/example1.out.json
-📂 Project Structure
-Plaintext
-├── src/
-│   ├── main/java/       # Core LAE logic, tasks, executor, and shared memory
-│   └── test/java/       # Comprehensive unit tests
-├── pom.xml              # Maven project configuration and dependencies
-└── README.md
+    java -jar target/lga-1.0.jar 10 ./input_files/example1.json ./output_files/example1.out.json
+
+---
+
+## 📂 Project Structure
+
+    ├── src/
+    │   ├── main/java/       # Core LAE logic, tasks, executor, and shared memory
+    │   └── test/java/       # Comprehensive unit tests
+    ├── pom.xml              # Maven project configuration and dependencies
+    └── README.md
